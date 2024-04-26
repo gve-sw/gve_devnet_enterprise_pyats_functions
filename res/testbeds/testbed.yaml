@@ -1,0 +1,37 @@
+---
+testbed:
+devices:
+  DEVICEhostNAME: #EXACT HOSTNAME OF THE DEVICE
+    os: iosxe
+    type: iosxe
+    role: switch  # Custom attribute to specify the role
+    connections:
+      defaults:
+        class: unicon.Unicon
+      ssh:
+        protocol: ssh
+        ip: "1.2.3.4"  #DEVICE IP FOR SSH
+        port: "22"
+    credentials:
+      default:
+        password: examplePassword
+        username: exampleUsername
+
+  DEVICEhostNAME: #EXACT HOSTNAME OF THE DEVICE
+    os: iosxe
+    type: iosxe
+    role: router  # Custom attribute to specify the role
+    connections:
+      defaults:
+        class: unicon.Unicon
+      ssh:
+        protocol: ssh
+        ip: "1.2.3.4"   #DEVICE IP FOR SSH
+        port: "22"
+    credentials:
+      default:
+        password: examplePassword
+        username: exampleUsername
+
+        
+
